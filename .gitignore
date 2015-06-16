@@ -25,6 +25,7 @@ obj/
 
 # Executables
 /examples/example1/example1
+/examples/example2/example2
 *.exe
 *.out
 *.app
