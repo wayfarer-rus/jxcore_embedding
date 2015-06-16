@@ -41,7 +41,6 @@ int main(int argc, char **args) {
   JX_StartEngine();
 
   // loop for possible IO
-  // or JX_Loop() without usleep / while
   JX_Loop();
 
   JX_StopEngine();
