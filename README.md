@@ -10,7 +10,7 @@ Project that dedicated to embedding examples and research for jxnode into C++
 # How to build embeded examples for Linux
 * goto examples/example1 and look into Makefile
 
-Particularly you can build any source file by adapting this string:
+Basically you can build any source file by adapting this string:
 ````
 g++ sample.cpp -lstdc++ -std=c++11 -pthread -O3 -Wno-write-strings -I/targetFolder/include/node/public \
     -fno-rtti /targetFolder/bin/libjx.a /targetFolder/bin/libsqlite3.a \
@@ -20,7 +20,7 @@ g++ sample.cpp -lstdc++ -std=c++11 -pthread -O3 -Wno-write-strings -I/targetFold
     -o sample
 ````
 
-# How to build jxcire for Windows
+# How to build jxcore for Windows
 * clone repository from https://github.com/jxcore/jxcore
 * make sure that you have python2.7 installed and that 'python' command refers to python2.7. It is required for build scripts
 * run "VS2012 Cross Tool Command Prompt" from Microsoft Visual Studio
