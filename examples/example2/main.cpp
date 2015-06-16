@@ -35,15 +35,10 @@ int main(int argc, char **args) {
 
   char *contents = "var http = require('http'); \nhttp.createServer(function (req, res) { \nres.writeHead(200, {'Content-Type': 'text/plain'}); \nres.end('Hello World'); \n}).listen(1337, '127.0.0.1'); \nconsole.log('Server running at http://127.0.0.1:1337/');";
 
-
   // define the entry file contents
   JX_DefineMainFile(contents);
 
   JX_StartEngine();
-
-  // loop for possible IO
-  // or JX_Loop() without usleep / while
-  while (JX_LoopOnce() != 0) Sleep(1);
 
   // loop for possible IO
   // or JX_Loop() without usleep / while
